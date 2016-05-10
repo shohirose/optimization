@@ -1,3 +1,21 @@
+%% NEWTON METHOD FOR MINIMIZATION PROBLEM
+
+% This function find the local minimum by using Newton method with
+% line search.
+
+% Author: Sho Hirose, 2016/5/10
+
+% +-----------------------------------------------------------------------+
+% |                        Definition of Variables                        |
+% +-----------------------------------------------------------------------+
+% x       : the variable of f(x), vector.
+% fun     : the function to be minimized, f(x).
+% grad    : gradient vector of f(x).
+% hessian : hessian matrix of f(x).
+% x0      : initial x.
+% tol     : convergence tolerance.
+% maxiter : maximum iteration.
+
 function x = newton(fun, grad, hessian, x0, tol, maxiter)
 
 x = x0;
